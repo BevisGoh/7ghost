@@ -1,6 +1,6 @@
 <?php return array (
-  'password' => 'abc123456',
-  'host' => 'http://thepiratebay.org/',
+  'password' => '7ghost',
+  'host' => 'http://www.google.com/',
   'replaceDomain' => '0',
   'relativeHTML' => '0',
   'relativeCSS' => '0',

@@ -1,26 +1,26 @@
-### 7ghost PHP ·´Ïò´úÀí½Å±¾
+### 7ghost PHP åå‘ä»£ç†è„šæœ¬
 
 =================================================
 
-Ô­ÏîÄ¿µØÖ·£ºhttp://code.google.com/p/7ghost/
-°æ±¾£ºv1.0_beta1
+åŸé¡¹ç›®åœ°å€ï¼šhttp://code.google.com/p/7ghost/
+ç‰ˆæœ¬ï¼šv1.0_beta1
 
 =================================================
 
-ĞŞ¶©£ºoott123
+ä¿®è®¢ï¼šoott123
 
-ĞŞ¶©ËµÃ÷£º
+ä¿®è®¢è¯´æ˜ï¼š
 
-Ô´ÎÄ¼ş£º
-### 7ghost Ô­ .htaccess
+æºæ–‡ä»¶ï¼š
+### 7ghost åŸ .htaccess
 RewriteEngine on
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1
 ### end
 
-¸ÄÁ¼ºó£º
-### 33 ¸ÄÁ¼ .htaccess
+æ”¹è‰¯åï¼š
+### 33 æ”¹è‰¯ .htaccess
 RewriteEngine on
 RewriteBase /
 RewriteCond $1 ^(index\.php)?$ [OR]
