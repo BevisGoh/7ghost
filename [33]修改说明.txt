@@ -1,0 +1,29 @@
+7ghostPHP反向代理脚本
+=========================================
+项目原地址：http://code.google.com/p/7ghost/
+版本：v1.0_beta1
+=========================================
+修订：oott123
+修订说明：
+其实我什么都没动这么说你信么XD
+好吧，做了小幅改动的地方就是.htaccess文件了。
+原来的.htaccess在我的空间工作不正常，于是呢就去修订了一下。
+改良以后的htaccess应该是更加兼容了吧……
+还是把原来的.htaccess贴在这里吧，如果有的空间不行呢……
+源文件：
+###7ghost原.htaccess
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1
+###end
+改良后：
+###33改良.htaccess
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 ^(index\.php)?$ [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ - [S=1]
+RewriteRule . /index.php [L]
+###end
