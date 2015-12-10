@@ -59,19 +59,19 @@ function send_header($headers,$cookies=1){
 	$return;
 	if(is_array($headers))
 	foreach($headers as $value){
-		$arr=split(": ",$value);
+		$arr=explode(": ",$value);
 		if($arr[0]!="Set-Cookie"){
 			if($arr[0]!="Transfer-Encoding")
 			header($value);
 		}else{
 			if($cookies){
-				$arr=split(";",$arr[1]);
-				$arr_value = split("=",$arr[0]);
+				$arr=explode(";",$arr[1]);
+				$arr_value = explode("=",$arr[0]);
 				setcookie($arr_value[0],$arr_value[1]);
 			}
 		}
 		if($arr[0]=="Content-Type"){
-			$arr=split("; charset=",$arr[1]);
+			$arr=explode("; charset=",$arr[1]);
 			$arr[0] = trim($arr[0]);
 			$return = $arr;
 		}
