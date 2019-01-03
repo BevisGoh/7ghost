@@ -14,7 +14,7 @@
 * referer自定义
 
 ## 说明
-* 后台地址为：**\_admin\**
+* 后台地址为：**\_admin**
 * 默认登录密码：**7ghost**
 * 可编辑: **\_admin\data\config.php** 修改。
 
